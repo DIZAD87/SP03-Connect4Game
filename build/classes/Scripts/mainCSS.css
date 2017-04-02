@@ -1,0 +1,95 @@
+/*Daniel Izadnegahdar S00840086 IT2650 Lab#3 03/04/17*/
+/*This is the main stylesheet for the game*/
+
+    /*Background styles*/
+        .titleBackgroundStyle
+            {
+                -fx-background-image: url("/Images/background.png"); 
+            }
+        .gameBackgroundStyle
+            {
+               -fx-background-color:linear-gradient(from 0% 0% to 100% 200%, repeat,#008020 0%,#73E61C 50%);
+            }
+
+    /*Label styles*/
+        /*Title label*/     
+            .labelPlayerStatusOff
+                {
+                    -fx-background-image: url("/Images/lowerBannerOff.png"); 
+                    -fx-min-width: 490px;
+                    -fx-min-height: 70px;              
+                }
+            .labelPlayerStatusOn
+                {
+                    -fx-background-image: url("/Images/lowerBannerOn.png"); 
+                    -fx-min-width: 490px;
+                    -fx-min-height: 70px;              
+                }
+ 
+    /*Buttons*/
+        /*Push buttons*/       
+            .buttonDefault
+                {   
+                    -fx-background-color: 
+                        white,
+                        rgba(0,0,0,0.05),
+                        linear-gradient(#F7B314, #FF6608);
+                    -fx-background-insets: 0,9 9 8 9,9,10,11;
+                    -fx-background-radius: 50;
+                    -fx-font-family: "Tohama";
+                    -fx-font-size: 30px;
+                    -fx-text-fill: white;
+                    -fx-font-weight: bolder;
+                }
+            .buttonDefault:hover
+                {
+                    -fx-blend-mode: lighten;
+                    -fx-cursor: hand;
+                }
+        /*special buttons*/
+            #buttonReturnToMenuStyle
+                {
+                   
+                   -fx-graphic: url('/Images/backArrow.png');
+                   -fx-graphic-radius: 50;
+                }
+            #buttonInstructionsStyle
+                {
+                   
+                   -fx-graphic: url('/Images/exclamationPoint.png');
+                   -fx-graphic-radius: 50;
+                }
+               
+        /*Button labels*/ 
+            .buttonEmptyTokenStyle
+                { 
+                    -fx-background-image: url("/Images/emptyToken.png"); 
+                    -fx-min-width: 70px;
+                    -fx-min-height: 70px;
+                }
+                
+            .buttonEmptyTokenStyle:hover
+                { -fx-background-image: url("/Images/selectedToken.png"); }
+                
+            .buttonRedTokenStyle
+                { 
+                  -fx-background-image: url("/Images/redToken.png"); 
+                  -fx-min-width: 70px;
+                  -fx-min-height: 70px;
+                }
+                
+            .buttonBlueTokenStyle
+                { 
+                  -fx-background-image: url("/Images/blueToken.png"); 
+                  -fx-min-width: 70px;
+                  -fx-min-height: 70px;
+                }
+                
+            .buttonLightTokenStyle
+                { 
+                  -fx-background-image: url("/Images/lightToken.png"); 
+                  -fx-min-width: 70px;
+                  -fx-min-height: 70px;
+                }
+                
+
